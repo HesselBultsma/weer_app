@@ -5,7 +5,12 @@
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    -webkit-webkit-user-select: ;
+    -moz-webkit-user-select: ;
+    -ms-webkit-user-select: ;
+    -o-webkit-user-select: ;
+    -khtml-webkit-user-select: ;
+    webkit-user-select: ;: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
@@ -38,5 +43,4 @@ body {
 #copyright > img {
     height: 50px;
     margin-left: 100px;
-    margin-right: 100px;
 }
